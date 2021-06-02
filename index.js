@@ -7,4 +7,4 @@ function foundYou(array){
     }
   }
 }
-foundYou();
+foundYou(sauron);
