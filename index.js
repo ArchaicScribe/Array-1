@@ -96,21 +96,39 @@
 //Rule 4: Drop any non-dominant Terms, so it would become O(n^2) because O(n^2) will grow much fast than n by itself. 
 
 
-//#5 Space complexity O(1)
-function boooo(n) {
-    for (let i = 0; i < n.length; i++) {
-        console.log('booooo');
-    }
-}
+// //#5 Space complexity O(1)
+// function boooo(n) {
+//     for (let i = 0; i < n.length; i++) {
+//         console.log('booooo');
+//     }
+// }
 
-// #6 Space complexity O(n)
-function arrayOfHiNTimes(n) {
-    var hiArray = [];
-    for (let i = 0; i < n; i++) {
-        hiArray[i] = 'hi';
-    }
-    return hiArray;
-}
+// // #6 Space complexity O(n)
+// function arrayOfHiNTimes(n) {
+//     var hiArray = [];
+//     for (let i = 0; i < n; i++) {
+//         hiArray[i] = 'hi';
+//     }
+//     return hiArray;
+// }
 
-boooo([1,2])//O
-arrayOfHiNTimes(8)//O(n)
+// boooo([1,2])//O
+// arrayOfHiNTimes(8)//O(n)
+
+//Twitter exmaple. Find 1st, find Nth..
+const array = [{
+	tweet: 'hi',
+	date: 2012
+}, {
+	tweet: 'my',
+	date: 2014
+}, {
+	tweet: 'teddy',
+	date: 2018
+}];
+
+//O(n^2)
+
+//'hfjdslgbnhfjsdkib' O(1) in JavaScript, but it is contingent on what language you are using to run this. 
+// array[0];//O(1)
+// array[array.length - 1];//O(1)
