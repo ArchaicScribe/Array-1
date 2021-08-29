@@ -62,14 +62,35 @@
 
 
 //Log all pairs of array
-const boxes = [1,2,3,4,5];
+// const boxes = ['a', 'b', 'v', 'd', 't'];
 
-function logAllPairsOfArray(array){
-  for(let i = 0; i < array.length; i++){
-    for(let j = 0; j < array.length; j++){
-      console.log(array[i], array[j]);
-    }
-  }
+// function logAllPairsOfArray(array) {
+//   for (let i = 0; i < array.length; i++) {
+//     for (let j = 0; j < array.length; j++) {
+//       console.log(array[i], array[j]);
+//     }
+//   }
+// }
+
+// logAllPairsOfArray(boxes)
+
+//O(n^2)
+
+function printAllNumbersThenAllPairsSums(numbers) {
+	console.log('These are the numbers: ');
+	numbers.forEach(function(number) {
+		console.log(number);
+	});
+
+	console.log('And these are their sums: ');
+	numbers.forEach(function(firstNumber) {
+		numbers.forEach(function(secondNumber) {
+			console.log(firstNumber + secondNumber);
+		});
+	});
 }
 
-logAllPairsOfArray(boxes)
+printAllNumbersThenAllPairsSums([1, 2, 3, 4, 5]);
+
+//O(n + (n*n)) or O(n + (n^2))
+//Rule 4: Drop any non-dominant Terms, so it would become O(n^2) because O(n^2) will grow much fast than n by itself. 
