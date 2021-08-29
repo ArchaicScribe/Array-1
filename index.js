@@ -76,21 +76,41 @@
 
 //O(n^2)
 
-function printAllNumbersThenAllPairsSums(numbers) {
-	console.log('These are the numbers: ');
-	numbers.forEach(function(number) {
-		console.log(number);
-	});
+// function printAllNumbersThenAllPairsSums(numbers) {
+// 	console.log('These are the numbers: ');
+// 	numbers.forEach(function(number) {
+// 		console.log(number);
+// 	});
 
-	console.log('And these are their sums: ');
-	numbers.forEach(function(firstNumber) {
-		numbers.forEach(function(secondNumber) {
-			console.log(firstNumber + secondNumber);
-		});
-	});
-}
+// 	console.log('And these are their sums: ');
+// 	numbers.forEach(function(firstNumber) {
+// 		numbers.forEach(function(secondNumber) {
+// 			console.log(firstNumber + secondNumber);
+// 		});
+// 	});
+// }
 
-printAllNumbersThenAllPairsSums([1, 2, 3, 4, 5]);
+// printAllNumbersThenAllPairsSums([1, 2, 3, 4, 5]);
 
 //O(n + (n*n)) or O(n + (n^2))
 //Rule 4: Drop any non-dominant Terms, so it would become O(n^2) because O(n^2) will grow much fast than n by itself. 
+
+
+//#5 Space complexity O(1)
+function boooo(n) {
+    for (let i = 0; i < n.length; i++) {
+        console.log('booooo');
+    }
+}
+
+// #6 Space complexity O(n)
+function arrayOfHiNTimes(n) {
+    var hiArray = [];
+    for (let i = 0; i < n; i++) {
+        hiArray[i] = 'hi';
+    }
+    return hiArray;
+}
+
+boooo([1,2])//O
+arrayOfHiNTimes(8)//O(n)
